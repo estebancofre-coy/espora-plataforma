@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+THESIS: ESPORA as a Patagonian territory you look across — a layered Aysén landscape that the page is read against — refusing the generic university "card grid under a stock hero".
+OWN-WORLD: Fjord teal (#0c536b → #14798a), sea-green ranges (#2d948c, #5fb0a2), deep forest (#123f4c), low sun (#f7cb68) on a cold paper ground (#f3f7f4). Contour lines, mountain silhouettes, letter-marks cut from the acronym, pill filters, honest status stamps.
+STORY: Visitors learn what ESPORA is, its five lines, which initiatives are active or in development, and how consent-based participation works. They never mistake the field capture tool for a public results viewer.
+FIRST VIEWPORT: Full-bleed teal hero; huge ESPORA wordmark left with the expanded name and summary; landscape SVG rising behind on the right/bottom; primary action "Explorar proyectos", secondary "Cómo participar".
+FORM: Supplied-reference world pinned by the brief (no concept roll); single-page landing, staging = landscape hero + acronym ribbon.
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESPORA — Plataforma de la Universidad de Aysén</title>
+<meta name="description" content="ESPORA: Economía Social, Precios, Orgánicos, Residuos y Alimentación. Plataforma de la Universidad de Aysén que aglutina iniciativas de investigación, formación e innovación territorial en la Región de Aysén.">
+<meta name="theme-color" content="#0c536b">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" id="inicio-header">
+  <div class="header-inner">
+    <a class="brand" href="#inicio" aria-label="ESPORA, inicio">
+      <span class="brand-mark" aria-hidden="true">ESPORA</span>
+      <span class="brand-sub">Universidad de Aysén</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menú</span>
+    </button>
+    <nav class="site-nav" id="nav-principal" aria-label="Principal">
+      <ul>
+        <li><a href="#que-es">La plataforma</a></li>
+        <li><a href="#lineas">Líneas</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#participacion">Participación</a></li>
+        <li><a href="#etica">Ética</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+    <div class="hero-landscape" aria-hidden="true">
+      <svg viewBox="0 0 1440 640" preserveAspectRatio="xMaxYMax meet" focusable="false">
+        <g class="contours" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M-20 170 C 220 120, 420 210, 640 160 S 1080 90, 1460 150"/>
+          <path d="M-20 215 C 240 170, 450 250, 660 205 S 1100 140, 1460 195"/>
+          <path d="M-20 260 C 260 220, 470 290, 690 250 S 1120 190, 1460 240"/>
+          <path d="M-20 305 C 280 270, 500 330, 720 295 S 1140 240, 1460 285"/>
+        </g>
+        <circle class="sun" cx="1130" cy="190" r="46"/>
+        <path class="range range-back" d="M640 640 L 840 350 L 920 420 L 1050 230 L 1150 330 L 1260 260 L 1440 420 L 1440 640 Z"/>
+        <path class="range range-mid" d="M560 640 L 700 560 L 780 600 L 900 430 L 980 490 L 1100 350 L 1210 450 L 1330 380 L 1440 470 L 1440 640 Z"/>
+        <path class="range range-front" d="M480 640 L 640 590 L 760 620 L 920 510 L 1020 565 L 1150 470 L 1290 560 L 1440 520 L 1440 640 Z"/>
+        <g class="forest">
+          <path d="M760 640 l18-58 18 58z M800 640 l14-44 14 44z M836 640 l20-64 20 64z M880 640 l14-40 14 40z M916 640 l18-56 18 56z M956 640 l14-46 14 46z M992 640 l20-66 20 66z M1036 640 l14-42 14 42z M1072 640 l18-54 18 54z M1112 640 l16-48 16 48z M1150 640 l20-62 20 62z M1194 640 l14-40 14 40z M1230 640 l18-58 18 58z M1270 640 l14-44 14 44z M1306 640 l20-64 20 64z M1350 640 l16-46 16 46z M1388 640 l18-56 18 56z M1426 640 l14-44 14 44z"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+      <h1 id="titulo-hero" class="hero-title">
+        <span class="wordmark">ESPORA</span>
+        <span class="hero-expanded">Economía Social, Precios, Orgánicos, Residuos y Alimentación</span>
+      </h1>
+      <p class="hero-summary">ESPORA aglutina iniciativas de investigación, docencia e innovación territorial que observan el territorio para transformarlo, con la Universidad de Aysén en el centro y al servicio de la comunidad.</p>
+      <p class="hero-meta">Universidad de Aysén · Investigación, formación y territorio · Coyhaique, Región de Aysén, Patagonia chilena</p>
+      <div class="hero-actions">
+        <a class="btn btn-sun" href="#proyectos">Explorar proyectos</a>
+        <a class="btn btn-ghost" href="#participacion">Cómo participar</a>
+      </div>
+      <ul class="hero-tags">
+        <li><b>E</b> Economía Social</li>
+        <li><b>S</b> Solidaridad</li>
+        <li><b>P</b> Precios</li>
+        <li><b>O</b> Orgánicos</li>
+        <li><b>R</b> Residuos</li>
+        <li><b>A</b> Alimentación</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AVISO: plataforma pública vs herramienta de captura -->
+  <aside class="notice" aria-label="Sobre este sitio">
+    <div class="wrap notice-inner">
+      <svg class="notice-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 10.5v6M12 7.2v.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <p><strong>Sitio de difusión.</strong> Aquí se presentan la plataforma ESPORA y sus iniciativas. Este sitio no publica datos ni resultados; las herramientas de levantamiento enlazadas son de uso del equipo en terreno.</p>
+    </div>
+  </aside>
+
+  <!-- QUÉ ES ESPORA -->
+  <section class="section" id="que-es" aria-labelledby="titulo-que-es">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="titulo-que-es">¿Qué es ESPORA?</h2>
+      </div>
+      <dl class="facets">
+        <div class="facet">
+          <dt>Observatorio territorial</dt>
+          <dd>Levanta y georreferencia datos de terreno —disponibilidad, precios, origen y entornos alimentarios— mediante instrumentos de observación conectados y desconectados.</dd>
+        </div>
+        <div class="facet">
+          <dt>Contenedor conceptual</dt>
+          <dd>Reúne las líneas de investigación Economía Social, Precios, Orgánicos, Residuos y Alimentación bajo un mismo marco de economía social y alimentación sostenible.</dd>
+        </div>
+        <div class="facet">
+          <dt>Aglutinador de iniciativas</dt>
+          <dd>No es la única instancia ni el fin: innova constantemente y sirve de soporte a investigadores, docentes, estudiantes y comunidad, poniendo en el centro a la Universidad de Aysén.</dd>
+        </div>
+        <div class="facet">
+          <dt>Campo de formación I+D</dt>
+          <dd>Cada iniciativa contenida opera como proceso de investigación y desarrollo abierto, donde enseñanza y aprendizaje ocurren en el territorio, junto a los actores reales.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ANCLAJE FIUT -->
+  <section class="section section-tint" id="marco" aria-labelledby="titulo-fiut">
+    <div class="wrap split">
+      <div class="split-lead">
+        <h2 id="titulo-fiut">Anclaje al Plan de Desarrollo de Capacidades en Investigación</h2>
+        <p class="stamp">Incentivo FIUT</p>
+        <p>El Plan define una hoja de ruta decenal para el fortalecimiento de la investigación en la Universidad de Aysén y se estructura en cuatro ejes estratégicos. ESPORA se constituye como instrumento operativo de esos ejes:</p>
+      </div>
+      <ul class="axes">
+        <li><strong>Cambio climático y territorio sostenible</strong><span>Gestión y revalorización de residuos orgánicos, entornos alimentarios.</span></li>
+        <li><strong>Patrimonio, desarrollo y bienestar humano</strong><span>Economía social, organizaciones territoriales, imaginarios sociales.</span></li>
+        <li><strong>Innovación tecnológica y desarrollo productivo</strong><span>Plataforma de datos, inteligencia artificial asistida, sistemas de información geográfica.</span></li>
+        <li><strong>Transición energética en la Patagonia-Aysén</strong><span>Biodigestión y valorización energética de residuos orgánicos <em class="inline-status">(línea en desarrollo)</em>.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LAS CINCO LÍNEAS -->
+  <section class="section section-lines" id="lineas" aria-labelledby="titulo-lineas">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="titulo-lineas">Las cinco líneas de la sigla</h2>
+      </div>
+      <ol class="lines">
+        <li class="line">
+          <span class="line-letter" aria-hidden="true">ES</span>
+          <h3>Economía Social</h3>
+          <p>Circuitos solidarios, organizaciones comunitarias y producción local como base del desarrollo territorial.</p>
+        </li>
+        <li class="line">
+          <span class="line-letter" aria-hidden="true">P</span>
+          <h3>Precios</h3>
+          <p>Observación sistemática de precios y disponibilidad de alimentos para el diagnóstico de entornos alimentarios.</p>
+        </li>
+        <li class="line">
+          <span class="line-letter" aria-hidden="true">O</span>
+          <h3>Orgánicos</h3>
+          <p>Residuos orgánicos como recurso: compostaje, digestión y retorno de nutrientes al territorio.</p>
+        </li>
+        <li class="line">
+          <span class="line-letter" aria-hidden="true">R</span>
+          <h3>Residuos</h3>
+          <p>Gestión comunitaria y revalorización, desde los imaginarios sociales hasta las soluciones técnicas.</p>
+        </li>
+        <li class="line">
+          <span class="line-letter" aria-hidden="true">A</span>
+          <h3>Alimentación</h3>
+          <p>Entornos alimentarios saludables, cadenas de abastecimiento y soberanía alimentaria regional.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- MENÚ DE PROYECTOS -->
+  <section class="section" id="proyectos" aria-labelledby="titulo-proyectos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="titulo-proyectos">Menú de proyectos</h2>
+        <p class="lede">Seleccione una categoría y despliegue cada tarjeta para conocer el proyecto. Las iniciativas se presentan en sus sitios propios; ESPORA las visibiliza y conecta.</p>
+      </div>
+
+      <div class="catalog-bar">
+        <div class="filters" role="group" aria-label="Filtrar proyectos por categoría">
+          <button type="button" aria-pressed="true" data-filter="todos">Todos <span class="count" data-count="todos"></span></button>
+          <button type="button" aria-pressed="false" data-filter="observacion">Observación territorial <span class="count" data-count="observacion"></span></button>
+          <button type="button" aria-pressed="false" data-filter="laboratorio">Laboratorios vivos <span class="count" data-count="laboratorio"></span></button>
+          <button type="button" aria-pressed="false" data-filter="formacion">Formación <span class="count" data-count="formacion"></span></button>
+          <button type="button" aria-pressed="false" data-filter="desarrollo">En desarrollo <span class="count" data-count="desarrollo"></span></button>
+        </div>
+        <p class="legend">
+          <span class="status status-activo">Activo</span> en funcionamiento
+          <span class="status status-desarrollo">En desarrollo</span> en diseño o ejecución inicial
+        </p>
+      </div>
+
+      <p class="sr-only" role="status" aria-live="polite" id="estado-filtro"></p>
+
+      <div class="catalog" id="lista-proyectos">
+
+        <details class="project project-featured" data-cat="observacion" open>
+          <summary>
+            <span class="project-index" aria-hidden="true">Iniciativa 1</span>
+            <span class="project-title">
+              <span class="project-name">Observatorio Territorial de Economía Social y Alimentación</span>
+              <span class="project-cat">Observación territorial · Coyhaique · Marco de referencia: FAO &amp; Ambientes Alimentarios — UBB</span>
+            </span>
+            <span class="status status-activo">Activo</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p>Levantamiento georreferenciado de disponibilidad, precios y origen de alimentos en locales de la comuna. Instrumentos de terreno con guardado local y sincronización, códigos de local de muestra y filtros por unidad vecinal.</p>
+            <p>La información alimenta el diagnóstico de entornos alimentarios y la generación de políticas públicas locales.</p>
+            <div class="tool-callout">
+              <p><strong>Herramienta de captura para el equipo en terreno.</strong> El sitio enlazado sirve para registrar observaciones; no es un visor público de datos ni de resultados.</p>
+              <a class="btn btn-tool" href="https://estebancofre-coy.github.io/observatorio-espora/" target="_blank" rel="noopener">Abrir herramienta de captura — uso en terreno<span class="sr-only"> (se abre en una pestaña nueva)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </details>
+
+        <details class="project" data-cat="laboratorio">
+          <summary>
+            <span class="project-index" aria-hidden="true">Iniciativa 2</span>
+            <span class="project-title">
+              <span class="project-name">Laboratorio Vivo de Revalorización de Residuos Orgánicos</span>
+              <span class="project-cat">Laboratorio vivo · Coyhaique · Educación e investigación vinculadas</span>
+            </span>
+            <span class="status status-activo">Activo</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p>Espacio donde estudiantes de ciencias sociales, ciencias naturales y tecnologías trabajan conjuntamente en torno a procesos de revalorización —compostaje industrial, biodigestores y otras soluciones emergentes— instalando la teoría en prácticas con la comunidad.</p>
+            <p>Opera con lógica de investigación y desarrollo (I+D): procesos abiertos y no controlados, donde el trabajo colectivo genera soluciones que ningún actor anticipó individualmente. El entorno docente cruza disciplinas a nivel estudiantil y docente, con horizonte transdisciplinario.</p>
+          </div>
+        </details>
+
+        <details class="project" data-cat="formacion observacion">
+          <summary>
+            <span class="project-index" aria-hidden="true">Iniciativa 3</span>
+            <span class="project-title">
+              <span class="project-name">Plataforma de Organizaciones Sociales — Región de Aysén</span>
+              <span class="project-cat">Formación · Trabajo Social y Discapacidad (TSE013-1)</span>
+            </span>
+            <span class="status status-activo">Activo</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p>Investigar estas agrupaciones y visibilizarlas públicamente son un mismo acto: la intervención no es una etapa posterior al diagnóstico, sino su despliegue directo en el territorio.</p>
+            <p>Producto central del curso TSE013-1: fichas georreferenciadas y accesibles de organizaciones de personas con discapacidad y neurodivergencia, publicadas solo con consentimiento informado y validación de cada organización.</p>
+            <a class="btn btn-outline" href="https://visibilizaresintervenir.kimi.page/" target="_blank" rel="noopener">Ir a la plataforma<span class="sr-only"> (se abre en una pestaña nueva)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </details>
+
+        <details class="project project-dev" data-cat="desarrollo observacion">
+          <summary>
+            <span class="project-index" aria-hidden="true">Iniciativa 4</span>
+            <span class="project-title">
+              <span class="project-name">Imaginarios sociales sobre la gestión de residuos orgánicos</span>
+              <span class="project-cat">En desarrollo · Estudio PASD-Residuos, Fases 1–3 · Línea sociociberética</span>
+            </span>
+            <span class="status status-desarrollo">En desarrollo</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p>Estudio con actores del mundo político, científico y de la sociedad civil, usuarios y macroproductores de residuos, para visibilizar acoples y desacoples en la gestión de residuos orgánicos desde la observación de segundo orden (Pintos, Luhmann).</p>
+            <p>La codificación se apoya en inteligencia artificial asistida con protocolo de roles: la máquina audita corpus y propone segmentación; la interpretación es responsabilidad humana. Todo el material es 100&nbsp;% anonimizado.</p>
+          </div>
+        </details>
+
+        <details class="project project-dev" data-cat="desarrollo observacion">
+          <summary>
+            <span class="project-index" aria-hidden="true">Iniciativa 5</span>
+            <span class="project-title">
+              <span class="project-name">Entornos alimentarios — investigación con FAO Chile</span>
+              <span class="project-cat">En desarrollo · Diagnóstico territorial con apoyo SIG</span>
+            </span>
+            <span class="status status-desarrollo">En desarrollo</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="project-body">
+            <p>Levantamiento de información diagnóstica sobre cómo se alimenta la población: oferta de alimentación saludable y no saludable, cadenas de ingreso de mercadería y disposición territorial, orientada a maximizar el bienestar de la comunidad.</p>
+            <p>La plataforma ESPORA genera capas de información —tipos de negocio, categorización, acceso diferenciado por nivel socioeconómico y dispersión territorial— disponibles para la generación de política pública.</p>
+          </div>
+        </details>
+
+        <p class="catalog-empty" hidden>No hay iniciativas en esta categoría por ahora.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LÓGICA DE PARTICIPACIÓN -->
+  <section class="section section-deep" id="participacion" aria-labelledby="titulo-participacion">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="titulo-participacion">Lógica de participación: investigar es intervenir</h2>
+      </div>
+      <ol class="protocol">
+        <li class="protocol-step">
+          <span class="protocol-num" aria-hidden="true">1</span>
+          <h3><span class="sr-only">Paso 1: </span>Contacto formal</h3>
+          <p>La organización, comunidad o actor territorial contacta al equipo y se coordina una primera reunión.</p>
+        </li>
+        <li class="protocol-step">
+          <span class="protocol-num" aria-hidden="true">2</span>
+          <h3><span class="sr-only">Paso 2: </span>Consentimiento informado</h3>
+          <p>Quienes participan deciden qué información se publica. Ninguna ficha se publica sin consentimiento explícito y documentado.</p>
+        </li>
+        <li class="protocol-step">
+          <span class="protocol-num" aria-hidden="true">3</span>
+          <h3><span class="sr-only">Paso 3: </span>Levantamiento de terreno</h3>
+          <p>El equipo estudiantil y académico levanta la información, georreferencia y redacta en lenguaje claro, siguiendo criterios de accesibilidad WCAG 2.1 AA.</p>
+        </li>
+        <li class="protocol-step">
+          <span class="protocol-num" aria-hidden="true">4</span>
+          <h3><span class="sr-only">Paso 4: </span>Validación y publicación</h3>
+          <p>Los participantes revisan y validan el contenido. Solo entonces queda visible públicamente, y puede actualizarse o retirarse en cualquier momento.</p>
+        </li>
+      </ol>
+      <!-- PENDIENTE: canal de contacto público no suministrado; no inventar. -->
+      <p class="protocol-note">Canal de contacto público del equipo: pendiente de publicación.</p>
+    </div>
+  </section>
+
+  <!-- ÉTICA Y TRANSPARENCIA -->
+  <section class="section" id="etica" aria-labelledby="titulo-etica">
+    <div class="wrap split">
+      <div class="split-lead">
+        <h2 id="titulo-etica">Ética y transparencia</h2>
+      </div>
+      <ul class="ethics">
+        <li><strong>Anonimización garantizada:</strong> ningún dato identificatorio de participantes se solicita ni procesa en los estudios de imaginarios sociales.</li>
+        <li><strong>Propiedad de los datos:</strong> la información publicada pertenece a las organizaciones y comunidades que la entregan.</li>
+        <li><strong>IA con roles delimitados:</strong> la inteligencia artificial asiste la recolección, el procesamiento y la visualización de datos; la codificación, la interpretación y la redacción analítica son responsabilidad humana.</li>
+        <li><strong>Marco sociociberético:</strong> la observación de segundo orden obliga a examinar los condicionamientos de las propias herramientas, incluida la IA misma.</li>
+        <li><strong>Referencias validadas:</strong> Bioaqua/GORE Aysén (2026), SUBDERE (2024), SINIM (2025), MMA (2021).</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <svg class="footer-ridge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 90 L0 60 L160 30 L260 55 L420 10 L560 50 L700 25 L860 60 L1010 15 L1150 48 L1300 22 L1440 50 L1440 90 Z"/></svg>
+  <div class="wrap footer-inner">
+    <p class="footer-mark" aria-hidden="true">ESPORA</p>
+    <div>
+      <p><strong>ESPORA</strong> · Economía Social, Precios, Orgánicos, Residuos y Alimentación</p>
+      <p>Universidad de Aysén · Coyhaique, Región de Aysén · Plan de Desarrollo de Capacidades en Investigación (Incentivo FIUT)</p>
+      <p><a href="#inicio">Volver al inicio</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

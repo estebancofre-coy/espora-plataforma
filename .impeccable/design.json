@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T21:55:00-03:00",
+  "title": "Design System: ESPORA",
+  "extensions": {
+    "colorMeta": {
+      "fjord-800": { "role": "primary", "displayName": "Fjord Teal" },
+      "sun-400": { "role": "secondary", "displayName": "Low Sun" },
+      "forest-900": { "role": "tertiary", "displayName": "Forest Line" },
+      "paper": { "role": "neutral", "displayName": "Cold Paper" }
+    },
+    "typographyMeta": {
+      "wordmark": { "displayName": "Wordmark", "purpose": "Hero ESPORA wordmark only." },
+      "body": { "displayName": "Body", "purpose": "All running text; Atkinson Hyperlegible for accessibility." }
+    },
+    "shadows": [
+      { "name": "entry", "value": "0 6px 18px -8px rgba(18,63,76,.22)", "purpose": "Project entries at rest." },
+      { "name": "entry-hover", "value": "0 12px 26px -10px rgba(18,63,76,.3)", "purpose": "Project entries on hover." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "All transitions and the landscape rise." },
+      { "name": "landscape-rise", "value": "1.4s staggered translateY on ranges, sun and forest; contour draw 2.4s", "purpose": "Single authored load moment; off under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "lg", "value": "1000px" },
+      { "name": "md", "value": "860px" },
+      { "name": "sm", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Sun Button",
+      "kind": "button",
+      "refersTo": "button-sun",
+      "description": "Primary action on dark fjord grounds.",
+      "html": "<a class=\"ds-btn-sun\" href=\"#\">Explorar proyectos</a>",
+      "css": ".ds-btn-sun{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:999px;background:#f7cb68;color:#123f4c;font-weight:700;text-decoration:none;transition:background-color .2s}.ds-btn-sun:hover{background:#fadb91}.ds-btn-sun:focus-visible{outline:3px solid #0f7180;outline-offset:3px}"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "filter-chip-active",
+      "description": "Category filter with count; aria-pressed state.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"true\">Todos <span>5</span></button>",
+      "css": ".ds-chip{display:inline-flex;gap:.45rem;align-items:center;min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid #0f7180;background:#fff;color:#0f5d74;font-weight:700;cursor:pointer}.ds-chip[aria-pressed=true]{background:#0f5d74;color:#fff}.ds-chip:hover{background:#e5f2ee}.ds-chip[aria-pressed=true]:hover{background:#0f5d74}"
+    },
+    {
+      "name": "Status Stamp",
+      "kind": "chip",
+      "refersTo": "status-activo",
+      "description": "Active (filled dot) vs. in development (hollow dot).",
+      "html": "<span class=\"ds-status\">Activo</span> <span class=\"ds-status ds-dev\">En desarrollo</span>",
+      "css": ".ds-status{display:inline-flex;gap:.4rem;align-items:center;padding:.3rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700;background:#e6f4ea;color:#0f6a2e}.ds-status::before{content:'';width:.5rem;height:.5rem;border-radius:50%;background:currentColor}.ds-dev{background:#fef3d1;color:#6d4500}.ds-dev::before{background:transparent;border:2px solid currentColor}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Patagonian territory read from across a fjord",
+    "overview": "Fjord teal landscape hero with low sun and forest line, quiet paper sections, deep fjord participation band and forest-dark footer.",
+    "keyCharacteristics": ["Landscape hero", "Acronym ribbon", "Honest status stamps", "Tool callout separating public site from field capture tool"],
+    "rules": [
+      { "name": "Honest status rule", "body": "Status uses text, shape and color together.", "section": "colors" },
+      { "name": "Sun is scarce", "body": "Sun yellow marks one action or notice per region.", "section": "colors" }
+    ],
+    "dos": ["Label the observatory link as a field data-capture tool."],
+    "donts": ["Don't present data or results.", "Don't invent URLs or contacts."]
+  }
+}
