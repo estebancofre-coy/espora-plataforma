@@ -5,14 +5,17 @@ colors:
   paper: "#f1efe5"
   paper-light: "#faf8ef"
   paper-shadow: "#d8d3c2"
-  ink: "#20231f"
-  ink-muted: "#565a50"
-  forest-deep: "#173d2d"
-  forest: "#24513a"
-  forest-mid: "#376646"
-  leaf: "#66835b"
-  mint: "#b6d3c1"
-  mint-light: "#dce9dd"
+  ink: "#2b2b27"
+  ink-muted: "#56574c"
+  olive-ink: "#3b3a2e"
+  forest-deep: "#174536"
+  forest: "#1f5a48"
+  forest-mid: "#2e6a55"
+  leaf: "#6b7d4a"
+  huemul: "#8a6a4a"
+  mint: "#a9d3b5"
+  mint-light: "#dcebdf"
+  sage-band: "#e3f0e6"
   moss-light: "#e2e5d2"
   line: "#b9b7aa"
   development: "#e6dfbd"
@@ -81,6 +84,8 @@ The public surface reads as an unfolded field poster. Its first viewport pairs a
 
 ## Colors
 
+Palette aligned with the ESPORA brand board (low-poly folded paper): forest green `#1f5a48`, sage `#a9d3b5`, olive `#6b7d4a`, graphite `#2b2b27`, huemul brown `#8a6a4a` and paper white. The wordmark uses olive-ink `#3b3a2e`.
+
 ### Primary
 Warm paper (`paper`, `paper-light`) owns most of the surface. Ink black carries all primary typography and hard rules.
 
@@ -90,7 +95,8 @@ Forest greens (`forest-deep`, `forest`, `forest-mid`) identify action, instituti
 ### Named Rules
 - **Paper owns the page.** Large areas stay warm and matte; green appears as material, not decoration.
 - **Status remains honest.** Active uses mint/forest; in-development uses straw/umber plus explicit text.
-- **Black means structure.** Rules, shadows and typography use ink; avoid generic gray UI chrome.
+- **Black means structure.** Rules, shadows and typography use graphite ink; avoid generic gray UI chrome.
+- **Huemul brown is a pigment, not a signal.** Use it only inside illustrations and spore fragments, never for text or status.
 
 ## Typography
 
@@ -126,6 +132,18 @@ Native `<details>` entries behave like folded field records: ink border, hard pa
 
 ### Institutional mark
 The supplied white Universidad de Aysén / Trabajo Social logo sits on a forest paper strip over the hero artwork.
+
+### Wordmark and concept band
+The hero wordmark `ESPORA` is set in olive-ink with a small forest-green spore facet above the final A (`.wm-a`, CSS only; the accessible text stays "ESPORA"). The expanded concept line sits on a light sage paper band (`sage-band`) with a slightly cut edge and a soft hard shadow.
+
+### Brand-board motifs
+All motifs are hand-recreated SVGs in `assets/brand/` (the brand board image itself was not available to crop), drawn with faceted polygons in the palette above:
+- `seta-bosque.svg` — faceted forest-green mushroom with small companion mushrooms; sits as a cut-out at the lower-right corner of the hero artwork. Decorative (`alt=""`), rises in once only when motion is allowed.
+- `esporas.svg` — scattered diamond/triangle spore fragments, tiled at very low opacity (≤ .22) behind the hero copy and the participation band. Never behind body text at higher opacity.
+- `icono-*.svg` — six paper icons, one per line of the acronym: handshake with nodes (Economía Social), people network (Solidaridad), node cubes (Precios), leaves and berries (Orgánicos), recycling arrows (Residuos), bowl with vegetables (Alimentación). Decorative (`alt=""`) because the line title carries the meaning.
+- `assets/favicon.svg` — the faceted mushroom on paper.
+
+Use icons only where they reinforce a line or axis; do not scatter them as decoration. Condor, huemul and tree motifs from the board are reserved for future use.
 
 ### Signature artwork
 `assets/espora-paper-collage.jpg` is a crop derived from the supplied image. It is the central hero artifact and should not be repeated as a background elsewhere.
