@@ -116,7 +116,7 @@ Bricolage Grotesque for display (wordmark, headings, letter-marks, project names
 Wordmark (up to 9.5rem) → section heading (clamp 1.9–3rem, 800) → subheading 1.2rem 700 → body 1.0625rem/1.6. Body measure capped around 60–70ch.
 
 ## Layout
-Single column wrap of 72rem with fluid gutters; sections separated by `spacing.section`. Two-column "split" (5fr/7fr) for FIUT and ethics; acronym ribbon grid for the five lines; four-step horizontal protocol that collapses to 2 then 1 column. Breakpoints: 1000px, 860px (nav toggle), 640px.
+Single column wrap of 72rem with fluid gutters; sections separated by `spacing.section`. Two-column "split" (5fr/7fr) for FIUT and ethics; six-line acronym ribbon grid (six columns, then three, then one); four-step horizontal protocol that collapses to 2 then 1 column. Breakpoints: 1000px, 860px (nav toggle), 640px.
 
 ## Elevation & Depth
 Flat bands carry most structure. Only project entries lift: `0 6px 18px -8px rgba(18,63,76,.22)`, deepening on hover.
