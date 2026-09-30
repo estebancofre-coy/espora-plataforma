@@ -131,7 +131,7 @@ Filters resemble small inventory labels. Active filters receive a hard shadow. S
 Native `<details>` entries behave like folded field records: ink border, hard paper shadow and a visible top-right fold. The observatory remains featured; in-development records use a dashed edge and straw paper.
 
 ### Institutional mark
-The supplied white Universidad de Aysén / Trabajo Social logo sits on a forest paper strip at the top right of the hero diorama; the condor perches on it.
+The supplied white Universidad de Aysén / Trabajo Social logo sits on a forest paper strip in the hero copy column, directly under the "Universidad de Aysén · …" line and above the actions. It never overlaps the diorama: no illustration may be covered or cropped by it.
 
 ### Wordmark and concept band
 The hero wordmark `ESPORA` is set in olive-ink with a small forest-green spore facet above the final A (`.wm-a`, CSS only; the accessible text stays "ESPORA"). The expanded concept line sits on a light sage paper band (`sage-band`) with a slightly cut edge and a soft hard shadow.
@@ -150,7 +150,7 @@ Use icons only where they reinforce a line or axis; do not scatter them as decor
 The header is a sheet of `--paper` laid over the lighter page: no frame, no hard rule, no coloured plate behind the logo. Its lower edge is a torn-paper deckle (inline SVG, 7px, repeat-x) with a faint shadow. The header logo is the olive-ink `ESPORA` wordmark with the same forest spore facet as the hero. Never frame the header or the logo with a box or a border.
 
 ### Signature artwork
-The hero artwork is a hand-assembled paper diorama (`.diorama`), not a single illustration or a framed picture. Depth order: sage tree at the back, leaves with berries floating above it, forest tree with mushrooms in front overlapping it, huemul in the lower-left foreground stepping past the ground edge, condor perched on the institutional strip. Everything stands on an irregular sage paper ground (`#cfe6d5` → `--mint-300`) with two faint fold facets. A few spores and faceted cubes are scattered around the scene, some outside its edges, at .35–.85 opacity, suggesting dispersal and regeneration. The pieces get a soft drop shadow (never a hard offset frame). They rise in with a stagger only under `prefers-reduced-motion: no-preference`. Pieces stay at native size or smaller. `assets/espora-paper-collage.jpg` (a crop of the original poster) is no longer shown in the hero; keep it only as source material.
+The hero artwork is a hand-assembled paper diorama (`.diorama`), not a single illustration or a framed picture. Depth order: sage tree at the back, leaves with berries floating above it, forest tree with mushrooms in front overlapping it, huemul in the lower-left foreground stepping past the ground edge, condor soaring above the forest tree, fully visible. Everything stands on an irregular sage paper ground (`#cfe6d5` → `--mint-300`) with two faint fold facets. A few spores and faceted cubes are scattered around the scene, some outside its edges, at .35–.85 opacity, suggesting dispersal and regeneration. The pieces get a soft drop shadow (never a hard offset frame). They rise in with a stagger only under `prefers-reduced-motion: no-preference`. Pieces stay at native size or smaller. `assets/espora-paper-collage.jpg` (a crop of the original poster) is no longer shown in the hero; keep it only as source material.
 
 ## Do's and Don'ts
 
