@@ -10,7 +10,7 @@ Sitio estático de difusión (HTML/CSS/JS, sin build ni backend). **No publica d
 - `assets/styles.css`, `assets/main.js`, `assets/favicon.svg`
 - Contacto: <mailto:esteban.cofre@uaysen.cl>
 - Autor de la plataforma: Dr. Esteban Cofré-Morales, Académico del Departamento de Ciencias Sociales y Humanidades.
-- `reference/espora-plataforma.source.html` — archivo de referencia suministrado (contenido y diseño de origen). No se sirve como página.
+- `reference/espora-plataforma.source.html` — archivo de referencia suministrado (contenido y diseño de origen); se conserva en el repositorio, pero se excluye de la publicación de Pages.
 - `PRODUCT.md`, `DESIGN.md`, `.impeccable/design.json` — contexto de producto y sistema visual.
 
 ## Relación con el observatorio
