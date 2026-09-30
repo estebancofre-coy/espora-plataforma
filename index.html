@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--
-THESIS: ESPORA as a Patagonian territory you look across — a layered Aysén landscape that the page is read against — refusing the generic university "card grid under a stock hero".
-OWN-WORLD: Fjord teal (#0c536b → #14798a), sea-green ranges (#2d948c, #5fb0a2), deep forest (#123f4c), low sun (#f7cb68) on a cold paper ground (#f3f7f4). Contour lines, mountain silhouettes, letter-marks cut from the acronym, pill filters, honest status stamps.
+THESIS: ESPORA as a living paper artifact — knowledge, solidarity and territory folded into one shared organism — refusing both the generic university landing page and the literal poster reproduction.
+OWN-WORLD: Warm fibrous paper, ink black, forest and mint cut-paper greens, origami folds, hanging labels, branch rules and imperfect print textures. Components look assembled by hand but remain precise and accessible.
 STORY: Visitors learn what ESPORA is, its six lines, which initiatives are active or in development, and how consent-based participation works. They never mistake the field capture tool for a public results viewer.
-FIRST VIEWPORT: Full-bleed teal hero; huge ESPORA wordmark left with the expanded name and summary; landscape SVG rising behind on the right/bottom; primary action "Explorar proyectos", secondary "Cómo participar".
-FORM: Supplied-reference world pinned by the brief (no concept roll); single-page landing, staging = landscape hero + acronym ribbon.
+FIRST VIEWPORT: Editorial split poster: oversized black ESPORA masthead and action copy on the left; the supplied paper-collage artwork on the right under an institutional forest strip; the six initials form a cut-paper index along the bottom.
+FORM: User-pinned origami poster world; single-page editorial scroll, staging = unfolded field poster with recurring paper-cut fragments.
 -->
 <html lang="es">
 <head>
@@ -16,8 +16,9 @@ FORM: Supplied-reference world pinned by the brief (no concept roll); single-pag
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/rebrand.css">
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -67,16 +68,26 @@ FORM: Supplied-reference world pinned by the brief (no concept roll); single-pag
     </div>
 
     <div class="hero-inner">
-      <img class="hero-institutional-logo" src="assets/uaysen-trabajo-social-blanco.png" alt="Universidad de Aysén Patagonia · Trabajo Social · Departamento de Ciencias Sociales y Humanidades">
-      <h1 id="titulo-hero" class="hero-title">
-        <span class="wordmark">ESPORA</span>
-        <span class="hero-expanded">Economía Social, Solidaridad, Precios, Orgánicos, Residuos y Alimentación</span>
-      </h1>
-      <p class="hero-summary">ESPORA aglutina iniciativas de investigación, docencia e innovación territorial que observan el territorio para transformarlo, con la Universidad de Aysén en el centro y al servicio de la comunidad.</p>
-      <p class="hero-meta">Universidad de Aysén · Investigación, formación y territorio · Coyhaique, Región de Aysén, Patagonia chilena</p>
-      <div class="hero-actions">
-        <a class="btn btn-sun" href="#proyectos">Explorar proyectos</a>
-        <a class="btn btn-ghost" href="#participacion">Cómo participar</a>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="titulo-hero" class="hero-title">
+            <span class="wordmark">ESPORA</span>
+            <span class="hero-expanded">Economía Social · Solidaridad · Precios · Orgánicos · Residuos · Alimentación</span>
+          </h1>
+          <p class="hero-summary">ESPORA aglutina iniciativas de investigación, docencia e innovación territorial que observan el territorio para transformarlo, con la Universidad de Aysén en el centro y al servicio de la comunidad.</p>
+          <p class="hero-meta">Universidad de Aysén · Investigación, formación y territorio · Coyhaique, Región de Aysén, Patagonia chilena</p>
+          <div class="hero-actions">
+            <a class="btn btn-sun" href="#proyectos">Explorar proyectos</a>
+            <a class="btn btn-ghost" href="#participacion">Cómo participar</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <div class="institutional-band">
+            <img class="hero-institutional-logo" src="assets/uaysen-trabajo-social-blanco.png" alt="Universidad de Aysén Patagonia · Trabajo Social · Departamento de Ciencias Sociales y Humanidades">
+          </div>
+          <img class="paper-collage" src="assets/espora-paper-collage.jpg" alt="Composición de papel plegado con un árbol, balanzas, manos, hojas, reciclaje y alimentos">
+          <figcaption>Territorio · reciprocidad · transformación</figcaption>
+        </figure>
       </div>
       <ul class="hero-tags">
         <li><b>E</b> Economía Social</li>

@@ -1,67 +1,59 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T21:49:52-03:00",
+  "generatedAt": "2026-09-29T23:15:00-03:00",
   "title": "Design System: ESPORA",
   "extensions": {
     "colorMeta": {
-      "fjord-800": { "role": "primary", "displayName": "Fjord Teal" },
-      "sun-400": { "role": "secondary", "displayName": "Low Sun" },
-      "forest-900": { "role": "tertiary", "displayName": "Forest Line" },
-      "paper": { "role": "neutral", "displayName": "Cold Paper" }
+      "paper": {"role": "neutral", "displayName": "Fibrous Paper"},
+      "ink": {"role": "primary", "displayName": "Print Ink"},
+      "forest": {"role": "secondary", "displayName": "Forest Paper"},
+      "mint": {"role": "tertiary", "displayName": "Solidarity Mint"}
     },
     "typographyMeta": {
-      "wordmark": { "displayName": "Wordmark", "purpose": "Hero ESPORA wordmark only." },
-      "body": { "displayName": "Body", "purpose": "All running text; Atkinson Hyperlegible for accessibility." }
+      "wordmark": {"displayName": "Poster Masthead", "purpose": "ESPORA hero wordmark only."},
+      "heading": {"displayName": "Condensed Heading", "purpose": "Section and record headings."},
+      "body": {"displayName": "Accessible Body", "purpose": "Running text and controls."}
     },
     "shadows": [
-      { "name": "entry", "value": "0 6px 18px -8px rgba(18,63,76,.22)", "purpose": "Project entries at rest." },
-      { "name": "entry-hover", "value": "0 12px 26px -10px rgba(18,63,76,.3)", "purpose": "Project entries on hover." }
+      {"name": "paper-low", "value": "4px 4px 0 #20231f", "purpose": "Buttons and active labels."},
+      {"name": "paper-stack", "value": "6px 7px 0 #d8d3c2", "purpose": "Folded records and facets."},
+      {"name": "collage", "value": "8px 12px 0 rgba(23,61,45,.16), 0 18px 40px rgba(32,35,31,.14)", "purpose": "Central hero artifact."}
     ],
     "motion": [
-      { "name": "ease-out", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "All transitions and the landscape rise." },
-      { "name": "landscape-rise", "value": "1.4s staggered translateY on ranges, sun and forest; contour draw 2.4s", "purpose": "Single authored load moment; off under prefers-reduced-motion." }
+      {"name": "paper-settle", "value": "1.1s cubic-bezier(.16,1,.3,1)", "purpose": "The hero collage settles once; disabled under reduced motion."}
     ],
     "breakpoints": [
-      { "name": "lg", "value": "1000px" },
-      { "name": "md", "value": "860px" },
-      { "name": "sm", "value": "640px" }
+      {"name": "lg", "value": "1000px"},
+      {"name": "md", "value": "860px"},
+      {"name": "sm", "value": "640px"}
     ]
   },
   "components": [
     {
-      "name": "Sun Button",
+      "name": "Paper Button",
       "kind": "button",
-      "refersTo": "button-sun",
-      "description": "Primary action on dark fjord grounds.",
-      "html": "<a class=\"ds-btn-sun\" href=\"#\">Explorar proyectos</a>",
-      "css": ".ds-btn-sun{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:999px;background:#f7cb68;color:#123f4c;font-weight:700;text-decoration:none;transition:background-color .2s}.ds-btn-sun:hover{background:#fadb91}.ds-btn-sun:focus-visible{outline:3px solid #0f7180;outline-offset:3px}"
+      "refersTo": "button-primary",
+      "description": "Rectangular uppercase action with hard ink shadow.",
+      "html": "<a class=\"ds-paper-btn\" href=\"#\">EXPLORAR PROYECTOS</a>",
+      "css": ".ds-paper-btn{display:inline-flex;padding:12px 22px;background:#24513a;color:#faf8ef;border:2px solid #24513a;border-radius:0;box-shadow:4px 4px 0 #20231f;font:700 17px 'Archivo Narrow',sans-serif;text-decoration:none}.ds-paper-btn:hover{transform:translate(-1px,-1px);box-shadow:6px 6px 0 #20231f}.ds-paper-btn:focus-visible{outline:3px solid #376646;outline-offset:4px}"
     },
     {
-      "name": "Filter Chip",
-      "kind": "chip",
-      "refersTo": "filter-chip-active",
-      "description": "Category filter with count; aria-pressed state.",
-      "html": "<button class=\"ds-chip\" aria-pressed=\"true\">Todos <span>5</span></button>",
-      "css": ".ds-chip{display:inline-flex;gap:.45rem;align-items:center;min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid #0f7180;background:#fff;color:#0f5d74;font-weight:700;cursor:pointer}.ds-chip[aria-pressed=true]{background:#0f5d74;color:#fff}.ds-chip:hover{background:#e5f2ee}.ds-chip[aria-pressed=true]:hover{background:#0f5d74}"
-    },
-    {
-      "name": "Status Stamp",
-      "kind": "chip",
-      "refersTo": "status-activo",
-      "description": "Active (filled dot) vs. in development (hollow dot).",
-      "html": "<span class=\"ds-status\">Activo</span> <span class=\"ds-status ds-dev\">En desarrollo</span>",
-      "css": ".ds-status{display:inline-flex;gap:.4rem;align-items:center;padding:.3rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700;background:#e6f4ea;color:#0f6a2e}.ds-status::before{content:'';width:.5rem;height:.5rem;border-radius:50%;background:currentColor}.ds-dev{background:#fef3d1;color:#6d4500}.ds-dev::before{background:transparent;border:2px solid currentColor}"
+      "name": "Folded Record",
+      "kind": "card",
+      "description": "Project record with hard paper shadow and folded corner.",
+      "html": "<article class=\"ds-record\"><strong>OBSERVATORIO TERRITORIAL</strong><p>Registro de iniciativa.</p></article>",
+      "css": ".ds-record{position:relative;padding:20px;border:1px solid #20231f;background:#faf8ef;box-shadow:6px 7px 0 #d8d3c2;color:#20231f}.ds-record:after{content:'';position:absolute;right:-1px;top:-1px;width:28px;height:28px;background:linear-gradient(225deg,#f1efe5 48%,#b9b7aa 50%,#faf8ef 54%)}"
     }
   ],
   "narrative": {
-    "northStar": "A Patagonian territory read from across a fjord",
-    "overview": "Fjord teal landscape hero with low sun and forest line, quiet paper sections, deep fjord participation band and forest-dark footer.",
-    "keyCharacteristics": ["Landscape hero", "Six-line acronym ribbon", "Honest status stamps", "Tool callout separating public site from field capture tool"],
+    "northStar": "A living paper artifact",
+    "overview": "An unfolded territorial poster built from warm paper, print ink, forest and mint folds, and origami symbols.",
+    "keyCharacteristics": ["Editorial split hero", "Paper collage", "Folded records", "Geometric seals", "Branch-like participation path"],
     "rules": [
-      { "name": "Honest status rule", "body": "Status uses text, shape and color together.", "section": "colors" },
-      { "name": "Sun is scarce", "body": "Sun yellow marks one action or notice per region.", "section": "colors" }
+      {"name": "Paper owns the page", "body": "Large fields stay warm and matte; green appears as material.", "section": "colors"},
+      {"name": "Black means structure", "body": "Ink defines typography, rules and hard shadows.", "section": "elevation"}
     ],
-    "dos": ["Label the observatory link as a field data-capture tool."],
-    "donts": ["Don't present data or results.", "Don't invent URLs or contacts."]
+    "dos": ["Use folds, paper slips, seals and branch geometry.", "Keep generous paper fields."],
+    "donts": ["Do not use rounded dashboard cards.", "Do not place text over the collage.", "Do not imply public results."]
   }
 }
