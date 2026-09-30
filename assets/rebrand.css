@@ -243,11 +243,8 @@ a { color: var(--forest-800); }
 .spore.s7 { left: 12%; top: 58%; width: .45rem; height: .45rem; opacity: .35; }
 
 .institutional-band {
-  position: absolute;
-  z-index: 4;
-  top: 4.5rem;
-  right: 0;
-  width: min(52%, 16rem);
+  width: min(100%, 16rem);
+  margin-top: 1.25rem;
   padding: .7rem .85rem;
   background: var(--forest-900);
   box-shadow: 3px 4px 6px rgba(32, 35, 31, .18);
@@ -674,7 +671,7 @@ a { color: var(--forest-800); }
   .wordmark { font-size: clamp(4.6rem, 24vw, 6rem); }
   .hero-expanded { font-size: 1.25rem; }
   .hero-art { margin-top: .5rem; padding-top: 3.75rem; }
-  .institutional-band { top: 3.75rem; width: 56%; padding: .5rem .6rem; }
+  .institutional-band { width: min(100%, 13.5rem); padding: .55rem .65rem; }
   .hero-art figcaption { left: .25rem; bottom: .25rem; font-size: .72rem; }
   .piece-condor { top: -4.4rem; right: 7%; }
   .piece-hojas { left: 30%; }
