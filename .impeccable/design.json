@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T21:55:00-03:00",
+  "generatedAt": "2026-09-29T21:49:52-03:00",
   "title": "Design System: ESPORA",
   "extensions": {
     "colorMeta": {
@@ -56,7 +56,7 @@
   "narrative": {
     "northStar": "A Patagonian territory read from across a fjord",
     "overview": "Fjord teal landscape hero with low sun and forest line, quiet paper sections, deep fjord participation band and forest-dark footer.",
-    "keyCharacteristics": ["Landscape hero", "Acronym ribbon", "Honest status stamps", "Tool callout separating public site from field capture tool"],
+    "keyCharacteristics": ["Landscape hero", "Six-line acronym ribbon", "Honest status stamps", "Tool callout separating public site from field capture tool"],
     "rules": [
       { "name": "Honest status rule", "body": "Status uses text, shape and color together.", "section": "colors" },
       { "name": "Sun is scarce", "body": "Sun yellow marks one action or notice per region.", "section": "colors" }

@@ -13,7 +13,7 @@ web
 
 ## Product Purpose
 
-ESPORA (Economía Social, Precios, Orgánicos, Residuos y Alimentación) is a public container/landing site that gives visibility to the ESPORA platform and the initiatives it groups. Success: a first-time visitor understands what ESPORA is, its lines, which initiatives are active vs. in development, and how participation and ethics work — without mistaking any linked tool for a public results viewer.
+ESPORA (Economía Social, Solidaridad, Precios, Orgánicos, Residuos y Alimentación) is a public container/landing site that gives visibility to the ESPORA platform and the initiatives it groups. Success: a first-time visitor understands what ESPORA is, its six lines, which initiatives are active vs. in development, and how participation and ethics work — without mistaking any linked tool for a public results viewer.
 
 ## Positioning
 
@@ -31,20 +31,21 @@ Per the supplied source copy: ESPORA is a Universidad de Aysén platform that ag
 - Link to the observatory must be labeled unambiguously as a data-capture tool for field use (e.g. "Abrir herramienta de captura — uso en terreno").
 - Do not imply a public data dashboard or published results exist.
 - Only external links present in the source are allowed: the observatory URL and `https://visibilizaresintervenir.kimi.page/`. No URLs are fabricated for other initiatives.
-- **Open decision:** public contact channel for participation (Paso 1) — not supplied; do not invent one.
+- Public contact: `esteban.cofre@uaysen.cl` (confirmed by the user).
 - **Open decision:** publication (GitHub Pages) requires explicit user approval.
 
 ## Brand Commitments
 
-- Outer platform name: **ESPORA** — Economía Social, Precios, Orgánicos, Residuos y Alimentación.
+- Outer platform name: **ESPORA** — Economía Social, Solidaridad, Precios, Orgánicos, Residuos y Alimentación.
 - Embedded initiative display name: **Observatorio Territorial de Economía Social y Alimentación**.
+- Platform author: **Dr. Esteban Cofré-Morales**, Académico del Departamento de Ciencias Sociales y Humanidades (confirmed by the user).
 - Keep the supplied copy of `reference/espora-plataforma.source.html`; only small clarity/safety edits allowed (public platform vs. internal capture tool).
 - Supplied visual reference: Patagonian teal/sea-green palette with a mountain/forest/sun landscape motif and letter-mark cards.
 
 ## Evidence on Hand
 
-- `reference/espora-plataforma.source.html` — full content and design reference (hero, what-is, FIUT anchoring, five lines, project catalog with five initiatives, participation protocol, ethics).
-- No photos, logos, testimonials, metrics or contact details were supplied. Do not fabricate any.
+- `reference/espora-plataforma.source.html` — original content and design reference (hero, what-is, FIUT anchoring, lines, project catalog, participation protocol, ethics).
+- No photos, logos, testimonials or metrics were supplied. Do not fabricate any.
 
 ## Product Principles
 
