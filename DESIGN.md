@@ -137,13 +137,14 @@ The supplied white Universidad de Aysén / Trabajo Social logo sits on a forest 
 The hero wordmark `ESPORA` is set in olive-ink with a small forest-green spore facet above the final A (`.wm-a`, CSS only; the accessible text stays "ESPORA"). The expanded concept line sits on a light sage paper band (`sage-band`) with a slightly cut edge and a soft hard shadow.
 
 ### Brand-board motifs
-All motifs are hand-recreated SVGs in `assets/brand/` (the brand board image itself was not available to crop), drawn with faceted polygons in the palette above:
-- `seta-bosque.svg` — faceted forest-green mushroom with small companion mushrooms; sits as a cut-out at the lower-right corner of the hero artwork. Decorative (`alt=""`), rises in once only when motion is allowed.
-- `esporas.svg` — scattered diamond/triangle spore fragments, tiled at very low opacity (≤ .22) behind the hero copy and the participation band. Never behind body text at higher opacity.
-- `icono-*.svg` — six paper icons, one per line of the acronym: handshake with nodes (Economía Social), people network (Solidaridad), node cubes (Precios), leaves and berries (Orgánicos), recycling arrows (Residuos), bowl with vegetables (Alimentación). Decorative (`alt=""`) because the line title carries the meaning.
+Raster motifs in `assets/brand/` are cut directly from the brand board v2 (`reference/ESPORA-brand-board-v2.jpg`): flood fill from the crop edges against the board's cream background (tolerance 13 for pieces with white paper, 34 otherwise), keep the largest connected component (all components for leaves and berries), 1px erosion, slight alpha feathering, tight crop, WebP export. They are never upscaled beyond native size (tree ≈ 262 px, icons ≈ 80–145 px). The board's cream background is a photographic backdrop, not a brand colour: never reintroduce it.
+- `arbol-bosque.webp` — forest-green faceted tree-mushroom with small companion mushrooms; sits as a cut-out at the lower-right corner of the hero artwork (top-left on mobile). Decorative (`alt=""`), rises in once only when motion is allowed.
+- `esporas.svg` — scattered diamond/triangle spore fragments (SVG), tiled at very low opacity (≤ .22) behind the hero copy and the participation band. Never behind body text at higher opacity.
+- `icono-*.webp` — six paper icons, one per line of the acronym: handshake with nodes (Economía Social), people network (Solidaridad), node cubes (Precios), leaves and berries (Orgánicos), recycling arrows (Residuos), bowl with vegetables (Alimentación). Shown at ≤ 3.25rem with `object-fit: contain`. Decorative (`alt=""`) because the line title carries the meaning.
 - `assets/favicon.svg` — the faceted mushroom on paper.
+- The hero summary sits on a light-sage paper slip (`--sage-band`, forest left edge, slightly irregular clip) echoing the board's text strips.
 
-Use icons only where they reinforce a line or axis; do not scatter them as decoration. Condor, huemul and tree motifs from the board are reserved for future use.
+Use icons only where they reinforce a line or axis; do not scatter them as decoration. The sage tree, condor and huemul cutouts from the board are reserved for future use (re-cut with the same method when needed).
 
 ### Signature artwork
 `assets/espora-paper-collage.jpg` is a crop derived from the supplied image. It is the central hero artifact and should not be repeated as a background elsewhere.
