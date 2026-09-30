@@ -39,12 +39,14 @@ Per the supplied source copy: ESPORA is a Universidad de Aysén platform that ag
 - Outer platform name: **ESPORA** — Economía Social, Solidaridad, Precios, Orgánicos, Residuos y Alimentación.
 - Embedded initiative display name: **Observatorio Territorial de Economía Social y Alimentación**.
 - Platform author: **Dr. Esteban Cofré-Morales**, Académico del Departamento de Ciencias Sociales y Humanidades (confirmed by the user).
+- Universidad de Aysén / Trabajo Social white logo supplied by the user and displayed on the ESPORA hero.
 - Keep the supplied copy of `reference/espora-plataforma.source.html`; only small clarity/safety edits allowed (public platform vs. internal capture tool).
 - Supplied visual reference: Patagonian teal/sea-green palette with a mountain/forest/sun landscape motif and letter-mark cards.
 
 ## Evidence on Hand
 
 - `reference/espora-plataforma.source.html` — original content and design reference (hero, what-is, FIUT anchoring, lines, project catalog, participation protocol, ethics).
+- `assets/uaysen-trabajo-social-blanco.png` — transparent white university / Trabajo Social logo supplied in the conversation.
 - No photos, logos, testimonials or metrics were supplied. Do not fabricate any.
 
 ## Product Principles

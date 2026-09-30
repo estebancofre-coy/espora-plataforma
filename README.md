@@ -7,7 +7,7 @@ Sitio estático de difusión (HTML/CSS/JS, sin build ni backend). **No publica d
 ## Estructura
 
 - `index.html` — landing pública (plataforma, marco FIUT, seis líneas, menú de proyectos con filtros, participación, ética).
-- `assets/styles.css`, `assets/main.js`, `assets/favicon.svg`
+- `assets/styles.css`, `assets/main.js`, `assets/favicon.svg`, `assets/uaysen-trabajo-social-blanco.png`
 - Contacto: <mailto:esteban.cofre@uaysen.cl>
 - Autor de la plataforma: Dr. Esteban Cofré-Morales, Académico del Departamento de Ciencias Sociales y Humanidades.
 - `reference/espora-plataforma.source.html` — archivo de referencia suministrado (contenido y diseño de origen); se conserva en el repositorio, pero se excluye de la publicación de Pages.

@@ -92,7 +92,7 @@ components:
 
 ## Overview
 
-A Patagonian territory read from across a fjord. The world comes from the supplied reference (`reference/espora-plataforma.source.html`): fjord teal, sea-green ranges, a low sun and a dark forest line. The hero is a full-bleed landscape with contour lines; the rest of the page alternates quiet paper sections with tinted and deep-fjord bands, closing on a forest-dark footer under a mountain ridge.
+A Patagonian territory read from across a fjord. The world comes from the supplied reference (`reference/espora-plataforma.source.html`): fjord teal, sea-green ranges, a low sun and a dark forest line. The hero is a full-bleed landscape with contour lines and the supplied white Universidad de Aysén / Trabajo Social logo at its upper-right edge; the rest of the page alternates quiet paper sections with tinted and deep-fjord bands, closing on a forest-dark footer under a mountain ridge.
 
 ## Colors
 
@@ -140,6 +140,9 @@ Sticky fjord-900 bar, pill links with `aria-current` section highlighting; below
 
 ### Tool callout (signature)
 Tinted sea-50 box that states the linked site is a field capture tool and not a public results viewer, next to the `btn-tool` action.
+
+### Institutional logo
+Use the supplied transparent white mark only on the dark ESPORA hero. Keep it upper-right and out of the headline's reading column; reduce it on narrow screens and preserve clear space.
 
 ## Do's and Don'ts
 
