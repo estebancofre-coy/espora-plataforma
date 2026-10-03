@@ -223,7 +223,7 @@ a { color: var(--forest-800); }
 .piece-hojas { z-index: 2; left: 34%; top: 0; width: min(17%, 90px); transform: rotate(-14deg); }
 .piece-bosque { z-index: 3; right: 1%; top: 31%; width: min(54%, 262px); }
 .piece-huemul { z-index: 5; left: -3%; bottom: 3%; width: min(35%, 170px); }
-.piece-condor { z-index: 6; right: 9%; top: -5.8rem; width: min(19%, 100px); }
+.piece-condor { z-index: 6; left: 7%; top: 0; width: min(21%, 110px); }
 
 .spore {
   position: absolute;
@@ -673,7 +673,7 @@ a { color: var(--forest-800); }
   .hero-art { margin-top: .5rem; padding-top: 3.75rem; }
   .institutional-band { width: min(100%, 13.5rem); padding: .55rem .65rem; }
   .hero-art figcaption { left: .25rem; bottom: .25rem; font-size: .72rem; }
-  .piece-condor { top: -4.4rem; right: 7%; }
+  .piece-condor { left: 6%; right: auto; top: 0; width: min(24%, 90px); }
   .piece-hojas { left: 30%; }
   .hero::before { width: 100%; height: 22rem; }
   .line-icon { top: .85rem; right: .75rem; width: 2.5rem; height: 2.5rem; }
