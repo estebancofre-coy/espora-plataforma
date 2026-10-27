@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+THESIS: A public registry should be searchable and legible without turning its source spreadsheet into a people directory.
+OWN-WORLD: Warm paper, ink rules, forest-green controls and folded record slips inherit ESPORA's paper-collage system.
+STORY: Visitors can filter and find organizations by type, name or registry sequence while personal identifiers and contacts stay private.
+FIRST VIEWPORT: A large editorial title and source date lead directly to privacy scope, type filters and name search.
+FORM: A dedicated, click-through registry page; the landing page remains unchanged apart from its navigation link.
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organizaciones sociales — ESPORA</title>
+<meta name="description" content="Registro de organizaciones funcionales y territoriales de la Región de Aysén, con corte a enero de 2026.">
+<meta name="theme-color" content="#f1efe5">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/rebrand.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html#inicio" aria-label="ESPORA, inicio">
+      <span class="brand-mark" aria-hidden="true">ESPORA</span>
+      <span class="brand-sub">Universidad de Aysén</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menú</span>
+    </button>
+    <nav class="site-nav" id="nav-principal" aria-label="Principal">
+      <ul>
+        <li><a href="index.html#que-es">La plataforma</a></li>
+        <li><a href="index.html#lineas">Líneas</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="organizaciones.html" aria-current="page">Organizaciones sociales</a></li>
+        <li><a href="index.html#participacion">Participación</a></li>
+        <li><a href="index.html#etica">Ética</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="section organization-page" aria-labelledby="titulo-organizaciones">
+    <div class="wrap">
+      <div class="organization-heading">
+        <div>
+          <h1 id="titulo-organizaciones">Organizaciones sociales</h1>
+          <p>Consulta el registro de organizaciones funcionales y territoriales de la Región de Aysén. Filtra por tipo o busca por nombre y número correlativo.</p>
+        </div>
+        <p class="organization-source">Ley N° 19.418 · Corte del registro: enero de 2026<br><span id="resumen-registro">Cargando registros…</span></p>
+      </div>
+
+      <aside class="organization-privacy" aria-label="Alcance de los datos publicados">
+        <strong>Datos publicados con resguardo.</strong>
+        Se muestran únicamente el número correlativo, tipo y nombre de cada organización. No se publican RUT, domicilios exactos, nombres de representantes ni sus datos de contacto.
+      </aside>
+
+      <div class="organization-tools">
+        <div>
+          <h2>Filtrar por tipo</h2>
+          <div class="organization-filters" role="group" aria-label="Filtrar organizaciones por tipo">
+            <button type="button" data-type="todos" aria-pressed="true">Todas <span class="organization-count" data-count="todos"></span></button>
+            <button type="button" data-type="funcionales" aria-pressed="false">Funcionales <span class="organization-count" data-count="funcionales"></span></button>
+            <button type="button" data-type="territoriales" aria-pressed="false">Territoriales <span class="organization-count" data-count="territoriales"></span></button>
+          </div>
+        </div>
+        <div class="organization-search">
+          <label for="buscar-organizacion">Buscar organización</label>
+          <input id="buscar-organizacion" type="search" autocomplete="off" placeholder="Nombre o número de registro">
+        </div>
+      </div>
+
+      <p class="organization-results" id="estado-organizaciones" role="status" aria-live="polite"></p>
+      <p class="organization-error" id="error-organizaciones" role="alert" hidden>No fue posible cargar el registro. Recarga la página para intentarlo nuevamente.</p>
+      <ul class="organization-list" id="lista-organizaciones" aria-label="Resultados de organizaciones"></ul>
+      <p class="organization-empty" id="sin-resultados" hidden>No hay organizaciones que coincidan con esta búsqueda. Prueba otro nombre o cambia el filtro.</p>
+      <nav class="organization-pagination" id="paginacion-organizaciones" aria-label="Páginas de resultados">
+        <button type="button" id="pagina-anterior">Anterior</button>
+        <span id="pagina-actual"></span>
+        <button type="button" id="pagina-siguiente">Siguiente</button>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <svg class="footer-ridge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 90 L0 60 L160 30 L260 55 L420 10 L560 50 L700 25 L860 60 L1010 15 L1150 48 L1300 22 L1440 50 L1440 90 Z"/></svg>
+  <div class="wrap footer-inner">
+    <p class="footer-mark" aria-hidden="true">ESPORA</p>
+    <div>
+      <p><strong>ESPORA</strong> · Economía Social, Solidaridad, Precios, Orgánicos, Residuos y Alimentación</p>
+      <p>Universidad de Aysén · Coyhaique, Región de Aysén</p>
+      <p><a href="index.html">Volver a la plataforma</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+<script src="data/organizaciones-publicas.js" defer></script>
+<script src="assets/organizaciones.js" defer></script>
+</body>
+</html>

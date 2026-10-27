@@ -2,12 +2,14 @@
 
 Plataforma pública ESPORA (Economía Social, Solidaridad, Precios, Orgánicos, Residuos y Alimentación): iniciativas de investigación, formación e innovación territorial en Aysén.
 
-Sitio estático de difusión (HTML/CSS/JS, sin build ni backend). **No publica datos ni resultados.**
+Sitio estático de difusión (HTML/CSS/JS, sin build ni backend). Incluye un registro público resumido de organizaciones; no publica datos de contacto ni resultados de investigación.
 
 ## Estructura
 
 - `index.html` — landing pública (plataforma, marco FIUT, seis líneas, menú de proyectos con filtros, participación, ética).
+- `organizaciones.html` — registro público consultable por tipo de organización y nombre.
 - `assets/styles.css`, `assets/rebrand.css`, `assets/main.js`, `assets/favicon.svg`, `assets/uaysen-trabajo-social-blanco.png`, `assets/espora-paper-collage.jpg`
+- `data/organizaciones-publicas.js` — selección pública del registro (número correlativo, tipo y nombre). Los CSV originales se excluyen del control de versiones y de GitHub Pages.
 - Contacto: <mailto:esteban.cofre@uaysen.cl>
 - Autor de la plataforma: Dr. Esteban Cofré-Morales, Académico del Departamento de Ciencias Sociales y Humanidades.
 - `reference/espora-plataforma.source.html` — archivo de referencia suministrado (contenido y diseño de origen); se conserva en el repositorio, pero se excluye de la publicación de Pages.
@@ -20,6 +22,10 @@ La iniciativa **Observatorio Territorial de Economía Social y Alimentación** v
 ## Ver localmente
 
 Abrir `index.html` en un navegador, o servir la carpeta: `npx serve .`
+
+## Registro de organizaciones
+
+La sección publica el número correlativo, tipo y nombre de cada organización del registro con corte a enero de 2026. Para proteger datos personales, no muestra RUT, domicilio exacto, nombres de representantes ni sus teléfonos o correos. Los CSV originales en `data/` no deben publicarse ni agregarse al repositorio.
 
 ## Publicación
 

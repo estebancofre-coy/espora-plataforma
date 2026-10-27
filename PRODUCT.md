@@ -27,12 +27,12 @@ Per the supplied source copy: ESPORA is a Universidad de Aysén platform that ag
 
 ## Capabilities and Constraints
 
-- Static HTML/CSS/JS, no build step, no backend, no data publication.
+- Static HTML/CSS/JS, no build step or backend. The public site includes an explicitly authorized summary of the January 2026 Ley N°19.418 organization register; it omits organization and personal RUTs, exact addresses, representative names, phone numbers, and email addresses.
 - Link to the observatory must be labeled unambiguously as a data-capture tool for field use (e.g. "Abrir herramienta de captura — uso en terreno").
 - Do not imply a public data dashboard or published results exist.
 - Only external links present in the source are allowed: the observatory URL and `https://visibilizaresintervenir.kimi.page/`. No URLs are fabricated for other initiatives.
 - Public contact: `esteban.cofre@uaysen.cl` (confirmed by the user).
-- **Open decision:** publication (GitHub Pages) requires explicit user approval.
+- Publication of the January 2026 organization register was explicitly approved by the user for the public summary fields only; GitHub Pages must not include the source CSVs or personal contact fields.
 
 ## Brand Commitments
 
@@ -53,9 +53,9 @@ Per the supplied source copy: ESPORA is a Universidad de Aysén platform that ag
 
 ## Product Principles
 
-1. Visibility, not data publication: describe initiatives; never present results.
+1. Publish only the authorized organization register fields; never present research results or personal contact details.
 2. Honest status: active vs. in development is always explicit.
-3. Consent first: nothing about organizations is public without their validation.
+3. Consent first: publish only the explicitly authorized public register fields; other organization profiles require their validation.
 4. Territory at the center: Aysén and the Universidad de Aysén are the anchor.
 5. Human responsibility for interpretation; AI is assistive with delimited roles.
 
